@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANADA GHANA CHAMBER OF COMMERCE – CALGARY CHAPTER</title>
+
+    <!-- Google Fonts: Merriweather and Open Sans -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Space+Grotesk:wght@300;700&display=swap"
+        rel="stylesheet">
+    <!-- Google Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Alpine.js CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- AOS.js (Animate On Scroll) CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Optional: Add a smooth scroll behavior for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'ui-sans-serif', 'system-ui'],
+                        serif: ['Merriweather', 'ui-serif', 'Georgia'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- 
+      Header & Navigation
+      - `x-data="{ mobileMenuOpen: false }"`: Initializes Alpine.js state for the mobile menu.
+      - `@click="mobileMenuOpen = !mobileMenuOpen"`: Toggles the menu state.
+      - `x-show="mobileMenuOpen"`: Shows or hides the mobile menu based on the state.
+    -->
+    <header class="bg-[#0B1633] shadow-md sticky top-0 z-50">
+        <nav class="w-[1440px] mx-auto px-[128px] py-4 flex items-center justify-between text-white">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="./assets/images/logo.png" alt="Logo" class="h-12 w-auto">
+                <span class="text-2xl font-bold">C.G.C.C.C</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#hero" class="hover:text-indigo-600 font-medium">Home</a>
+                <a href="#features" class="hover:text-indigo-600 font-medium">About Us</a>
+                <a href="#features" class="hover:text-indigo-600 font-medium">Membership</a>
+                <a href="#features" class="hover:text-indigo-600 font-medium">The Team</a>
+                <a href="#features" class="hover:text-indigo-600 font-medium">Gallery</a>
+                <a href="#contact" class="hover:text-indigo-600 font-medium">Contact Us</a>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+        <!-- HERO + CAROUSEL -->
+        <section id="hero" class="relative w-full overflow-hidden" style="height: 700px;">
+            <div x-data="{
+                slides: [
+                    {
+                        img: './assets/images/hero1.jpg',
+                        title: 'Empowering Youth Innovation',
+                        desc: 'Join a vibrant community driving change and innovation across Africa and beyond.',
+                        btn: 'Get Involved',
+                        btnHref: '#contact'
+                    },
+                    {
+                        img: './assets/images/hero2.jpg',
+                        title: 'Connect, Collaborate, Create',
+                        desc: 'Network with like-minded innovators and access resources to bring your ideas to life.',
+                        btn: 'Explore Programs',
+                        btnHref: '#features'
+                    },
+                    {
+                        img: './assets/images/hero3.jpg',
+                        title: 'Shape the Future',
+                        desc: 'Your vision matters. Discover opportunities to make a lasting impact.',
+                        btn: 'Learn More',
+                        btnHref: '#features'
+                    },
+                    {
+                        img: './assets/images/hero4.jpg',
+                        title: 'Shape the Future',
+                        desc: 'Your vision matters. Discover opportunities to make a lasting impact.',
+                        btn: 'Learn More',
+                        btnHref: '#features'
+                    },
+                    {
+                        img: './assets/images/hero5.jpg',
+                        title: 'Shape the Future',
+                        desc: 'Your vision matters. Discover opportunities to make a lasting impact.',
+                        btn: 'Learn More',
+                        btnHref: '#features'
+                    }
+                ],
+                active: 0,
+                interval: null,
+                next() { this.active = (this.active + 1) % this.slides.length },
+                prev() { this.active = (this.active - 1 + this.slides.length) % this.slides.length },
+                startAuto() { this.interval = setInterval(() => this.next(), 6000) },
+                stopAuto() { clearInterval(this.interval) },
+                init() { this.startAuto() }
+            }" x-init="init" class="w-full h-full relative">
+                <!-- Slides -->
+                <template x-for="(slide, idx) in slides" :key="idx">
+                    <div x-show="active === idx" x-transition:enter="transition ease-out duration-1200"
+                        x-transition:enter-start="opacity-0 -translate-x-32"
+                        x-transition:enter-end="opacity-100 translate-x-0"
+                        x-transition:leave="transition ease-in duration-700"
+                        x-transition:leave-start="opacity-100 translate-x-0"
+                        x-transition:leave-end="opacity-0 translate-x-32" class="absolute inset-0 w-full h-full">
+                        <img :src="slide.img" alt="" class="object-cover w-full h-full" style="height: 700px;">
+                        <!-- <div class="absolute inset-0 bg-indigo-900 bg-opacity-60 flex flex-col items-center justify-center px-4">
+                        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg" x-text="slide.title"></h1>
+                        <p class="text-lg md:text-2xl text-indigo-100 mb-8 max-w-2xl mx-auto" x-text="slide.desc"></p>
+                        <a :href="slide.btnHref" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-lg" x-text="slide.btn"></a>
+                    </div> -->
+                    </div>
+                </template>
+                <!-- Controls -->
+                <div class="absolute left-0 right-0 bottom-8 flex justify-center items-center space-x-6 z-20">
+                    <button @click="prev" @mouseenter="stopAuto" @mouseleave="startAuto"
+                        class="bg-white bg-opacity-40 hover:bg-opacity-70 text-indigo-700 rounded-full p-2 shadow">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <template x-for="(slide, idx) in slides" :key="idx">
+                        <button @click="active = idx"
+                            :class="{'bg-white': active === idx, 'bg-white bg-opacity-30': active !== idx}"
+                            class="w-4 h-4 rounded-full mx-1 border-2 border-indigo-600 focus:outline-none"></button>
+                    </template>
+                    <button @click="next" @mouseenter="stopAuto" @mouseleave="startAuto"
+                        class="bg-white bg-opacity-40 hover:bg-opacity-70 text-indigo-700 rounded-full p-2 shadow">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section id="who-we-are" class="py-20 bg-[#0B1633]">
+            <div class="w-[1440px] mx-auto px-[128px]">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./assets/images/who-we-are.png" alt="who-we-are" class="">
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="" data-aos="fade-up" data-aos-delay="200">
+                        <div class="mb-12" data-aos="fade-up">
+                            <h2 class="text-3xl md:text-4xl font-bold text-white font-serif">Who We Are</h2>
+                            <p class="text-white text-lg mt-4 max-w-2xl mx-auto">The Canada Ghana Chamber of Commerce –
+                                Calgary Chapter (CGCC–Calgary) is a results-oriented, globally engaged business chamber
+                                focused on strengthening bilateral economic relations between Canada and Ghana. As part
+                                of the larger Canada Ghana Chamber of Commerce (CANCHAM) network, we serve as a pivotal
+                                platform connecting Alberta’s global industrial and innovation hub with West Africa’s
+                                emerging markets.</p>
+                            <button
+                                class="mt-6 bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
+                                <a href="#learn-more">Learn more</a>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Do Section -->
+        <section id="what-we-do" class="bg-white py-20">
+            <div class="w-[1440px] mx-auto px-[128px] text-center" data-aos="zoom-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif">What We Do</h2>
+                <p class="text-gray-600 mt-4 mb-8 max-w-2xl mx-auto">
+                    CGCC–Calgary offers services and programs that deliver measurable value across a broad spectrum of
+                    sectors and policy areas
+                </p>
+                <div class="grid md:grid-cols-3 gap-16">
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">finance_mode</span>
+                        <p class="text-lg text-gray-700">B2B and B2G Investment Matchmaking</p>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">partner_exchange</span>
+                        <p class="text-lg text-gray-700">Trade Missions and Market Entry Advisory</p>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">contract</span>
+                        <p class="text-lg text-gray-700">Government Relations & Policy Dialogue</p>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">engineering</span>
+                        <p class="text-lg text-gray-700">Infrastructure, Construction, & Engineering Solutions</p>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">solar_power</span>
+                        <p class="text-lg text-gray-700">Renewable Energy and Extractives Engagement</p>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">psychology</span>
+                        <p class="text-lg text-gray-700">Workforce Development & Diaspora Skill Mobilization</p>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">crisis_alert</span>
+                        <p class="text-lg text-gray-700">Emergency Response, Safety & National Planning Advisory</p>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">factory</span>
+                        <p class="text-lg text-gray-700">Supply Chain, Logistics, and Export Promotion</p>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-12 rounded-[16px]">
+                        <span class="text-4xl mb-4 material-symbols-outlined">developer_board</span>
+                        <p class="text-lg text-gray-700">Technology Transfer & Smart Infrastructure Projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-gray-150 py-24">
+            <div class="w-[1440px] mx-auto px-[128px]" data-aos="zoom-in">
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif mb-4">
+                            Upcoming Event
+                        </h2>
+                        <h3 class="text-xl md:text-2xl text-gray-800 mb-4">
+                            INNOVATION FOR IMPACT 2025
+                        </h3>
+                        <p class="text-base md:text-lg text-gray-700 mb-6">
+                            Join thought leaders, innovators, and changemakers across Africa for a high-energy day of
+                            insightful
+                            talks, live demos, and networking opportunities. Discover how technology, design, and
+                            community
+                            can
+                            drive real change.
+                        </p>
+                        <div class="flex flex-col md:flex-row justify-center text-center items-center gap-8 mb-8">
+                            <div class="text-gray-800">
+                                <p class="text-sm uppercase tracking-wider">📅 Date</p>
+                                <p class="text-base font-semibold">September 21, 2025</p>
+                            </div>
+                            <div class="text-gray-800">
+                                <p class="text-sm uppercase tracking-wider">🕒 Time</p>
+                                <p class="text-base font-semibold">9:00 am – 5:00 pm</p>
+                            </div>
+                            <div class="text-gray-800">
+                                <p class="text-sm uppercase tracking-wider">📍 Location</p>
+                                <p class="text-base font-semibold">Accra Digital Centre, Ghana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/event.png" alt="Innovation for Impact 2025"
+                            class="w-full h-auto shadow-lg" data-aos="fade-up">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Numbers Section -->
+        <section id="numbers" class="bg-[#F5C567] py-20">
+            <div class="w-[1440px] mx-auto px-[128px] text-center" data-aos="zoom-in">
+                <div class="grid md:grid-cols-3 gap-16">
+                    <div class="flex items-center">
+                        <span class="text-6xl text-white mb-4 material-symbols-outlined">diversity_2</span>
+                        <div class="flex flex-col text-left ml-4">
+                            <p class="text-5xl font-bold mb-2">150+</p>
+                            <p class="text-lg text-gray-800">Indigenous Communities & Organisations Alliances</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-6xl text-white mb-4 material-symbols-outlined">diversity_2</span>
+                        <div class="flex flex-col text-left ml-4">
+                            <p class="text-5xl font-bold mb-2">13</p>
+                            <p class="text-lg text-gray-800">Canada-Based Partners</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-6xl text-white mb-4 material-symbols-outlined">stars</span>
+                        <div class="flex flex-col text-left ml-4">
+                            <p class="text-5xl font-bold mb-2">12</p>
+                            <p class="text-lg text-gray-800">Ghana-Based Partners</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-6xl text-white mb-4 material-symbols-outlined">handshake</span>
+                        <div class="flex flex-col text-left ml-4">
+                            <p class="text-5xl font-bold mb-2">7</p>
+                            <p class="text-lg text-gray-800">Key International Affiliates</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-6xl text-white mb-4 material-symbols-outlined">globe</span>
+                        <div class="flex flex-col text-left ml-4">
+                            <p class="text-5xl font-bold mb-2">15</p>
+                            <p class="text-lg text-gray-800">Key International Partners</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-6xl text-white mb-4 material-symbols-outlined">business_center</span>
+                        <div class="flex flex-col text-left ml-4">
+                            <p class="text-5xl font-bold mb-2">16</p>
+                            <p class="text-lg text-gray-800">Corporate & Industry Collaborators</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Facilitation Section -->
+        <section id="business-facilitation" class="bg-white py-20">
+            <div class="w-[1440px] mx-auto px-[128px] text-center" data-aos="zoom-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif">Business Facilitation & Operational Models</h2>
+                <p class="text-gray-600 mt-4 mb-8 max-w-2xl mx-auto">
+                    Our Chamber adopts multiple facilitation frameworks to accelerate international business engagement and sustainable development. These include:
+                </p>
+                <div class="grid md:grid-cols-3 gap-16">
+                    <img src="./assets/images/left-business.png" alt="facilitation"
+                        class="w-full h-auto" data-aos="fade-up">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 MyBrand. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS.js (Animate On Scroll) JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800, // values from 0 to 3000, with step 50ms
+            once: false, // whether animation should happen only once - while scrolling down
+        });
+    </script>
+
+</body>
+
+</html>
