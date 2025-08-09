@@ -71,9 +71,12 @@
                 class="absolute top-full left-0 w-full bg-[#0B1633] text-white flex flex-col md:hidden shadow-lg z-50">
                 <a href="#hero" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Home</a>
                 <a href="#who-we-are" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About Us</a>
-                <a href="#what-we-do" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Membership</a>
-                <a href="#business-facilitation" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">The Team</a>
-                <a href="#key-partners" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Gallery</a>
+                <a href="#what-we-do" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">Membership</a>
+                <a href="#business-facilitation" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">The Team</a>
+                <a href="#key-partners" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">Gallery</a>
                 <a href="#contact" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Contact Us</a>
             </div>
         </nav>
@@ -137,10 +140,12 @@
                         x-transition:leave-start="opacity-100 translate-x-0"
                         x-transition:leave-end="opacity-0 translate-x-32" class="absolute inset-0 w-full h-full">
                         <img :src="slide.img" alt="" class="object-cover w-full h-full" style="height: 700px;">
-                        <div class="absolute inset-0 bg-indigo-900 bg-opacity-50 flex flex-col items-center justify-center px-4">
+                        <div
+                            class="absolute inset-0 bg-indigo-900 bg-opacity-50 flex flex-col items-center justify-center px-4">
                             <h1 class="text-2xl md:text-4xl font-extrabold text-white mb-4 drop-shadow-lg"
                                 x-text="slide.title"></h1>
-                            <p class="text-base md:text-xl text-center text-indigo-100 mb-8 max-w-2xl mx-auto" x-text="slide.desc">
+                            <p class="text-base md:text-xl text-center text-indigo-100 mb-8 max-w-2xl mx-auto"
+                                x-text="slide.desc">
                             </p>
                         </div>
                     </div>
@@ -176,13 +181,18 @@
                         <img src="./assets/images/who-we-are.png" alt="who-we-are" class="w-full h-auto">
                     </div>
                     <div data-aos="fade-up" data-aos-delay="200">
-                        <div class="mb-8 md:mb-12">
+                        <div class="mb-8 md:mb-12 text-left">
                             <h2 class="text-2xl md:text-4xl font-bold text-white font-serif">Who We Are</h2>
                             <p class="text-white text-base md:text-lg mt-4 max-w-2xl mx-auto">
-                                The Canada Ghana Chamber of Commerce – Calgary Chapter (CGCC–Calgary) is a results-oriented, globally engaged business chamber focused on strengthening bilateral economic relations between Canada and Ghana. As part of the larger Canada Ghana Chamber of Commerce (CANCHAM) network, we serve as a pivotal platform connecting Alberta’s global industrial and innovation hub with West Africa’s emerging markets.
+                                The Canada Ghana Chamber of Commerce – Calgary Chapter (CGCC–Calgary) is a
+                                results-oriented, globally engaged business chamber focused on strengthening bilateral
+                                economic relations between Canada and Ghana. As part of the larger Canada Ghana Chamber
+                                of Commerce (CANCHAM) network, we serve as a pivotal platform connecting Alberta’s
+                                global industrial and innovation hub with West Africa’s emerging markets.
                             </p>
-                            <button class="mt-6 bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
-                                <a href="#learn-more">Learn more</a>
+                            <button
+                                class="mt-6 bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
+                                <a href="#learn-more">Read more</a>
                             </button>
                         </div>
                     </div>
@@ -195,7 +205,8 @@
             <div class="max-w-screen-xl mx-auto px-4 md:px-8 text-center" data-aos="zoom-in">
                 <h2 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif">What We Do</h2>
                 <p class="text-gray-600 mt-4 mb-8 max-w-2xl mx-auto">
-                    CGCC–Calgary offers services and programs that deliver measurable value across a broad spectrum of sectors and policy areas
+                    CGCC–Calgary offers services and programs that deliver measurable value across a broad spectrum of
+                    sectors and policy areas
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
                     <div class="bg-gray-100 px-6 py-8 md:py-12 rounded-[16px]">
@@ -212,7 +223,8 @@
                     </div>
                     <div class="bg-gray-100 px-6 py-8 md:py-12 rounded-[16px]">
                         <span class="text-3xl md:text-4xl mb-4 material-symbols-outlined">engineering</span>
-                        <p class="text-base md:text-lg text-gray-700">Infrastructure, Construction, & Engineering Solutions</p>
+                        <p class="text-base md:text-lg text-gray-700">Infrastructure, Construction, & Engineering
+                            Solutions</p>
                     </div>
                     <div class="bg-gray-100 px-6 py-8 md:py-12 rounded-[16px]">
                         <span class="text-3xl md:text-4xl mb-4 material-symbols-outlined">solar_power</span>
@@ -220,11 +232,13 @@
                     </div>
                     <div class="bg-gray-100 px-6 py-8 md:py-12 rounded-[16px]">
                         <span class="text-3xl md:text-4xl mb-4 material-symbols-outlined">psychology</span>
-                        <p class="text-base md:text-lg text-gray-700">Workforce Development & Diaspora Skill Mobilization</p>
+                        <p class="text-base md:text-lg text-gray-700">Workforce Development & Diaspora Skill
+                            Mobilization</p>
                     </div>
                     <div class="bg-gray-100 px-6 py-8 md:py-12 rounded-[16px]">
                         <span class="text-3xl md:text-4xl mb-4 material-symbols-outlined">crisis_alert</span>
-                        <p class="text-base md:text-lg text-gray-700">Emergency Response, Safety & National Planning Advisory</p>
+                        <p class="text-base md:text-lg text-gray-700">Emergency Response, Safety & National Planning
+                            Advisory</p>
                     </div>
                     <div class="bg-gray-100 px-6 py-8 md:py-12 rounded-[16px]">
                         <span class="text-3xl md:text-4xl mb-4 material-symbols-outlined">factory</span>
@@ -232,7 +246,8 @@
                     </div>
                     <div class="bg-gray-100 px-6 py-8 md:py-12 rounded-[16px]">
                         <span class="text-3xl md:text-4xl mb-4 material-symbols-outlined">developer_board</span>
-                        <p class="text-base md:text-lg text-gray-700">Technology Transfer & Smart Infrastructure Projects</p>
+                        <p class="text-base md:text-lg text-gray-700">Technology Transfer & Smart Infrastructure
+                            Projects</p>
                     </div>
                 </div>
             </div>
@@ -250,9 +265,12 @@
                             INNOVATION FOR IMPACT 2025
                         </h3>
                         <p class="text-base md:text-lg text-gray-700 mb-6">
-                            Join thought leaders, innovators, and changemakers across Africa for a high-energy day of insightful talks, live demos, and networking opportunities. Discover how technology, design, and community can drive real change.
+                            Join thought leaders, innovators, and changemakers across Africa for a high-energy day of
+                            insightful talks, live demos, and networking opportunities. Discover how technology, design,
+                            and community can drive real change.
                         </p>
-                        <div class="flex flex-col md:flex-row justify-center text-center items-center gap-6 md:gap-8 mb-8">
+                        <div
+                            class="flex flex-col md:flex-row justify-center text-center items-center gap-6 md:gap-8 mb-8">
                             <div class="text-gray-800">
                                 <p class="text-xs md:text-sm uppercase tracking-wider">📅 Date</p>
                                 <p class="text-base font-semibold">September 21, 2025</p>
@@ -266,6 +284,10 @@
                                 <p class="text-base font-semibold">Accra Digital Centre, Ghana</p>
                             </div>
                         </div>
+                        <button
+                                class=" w-full md:w-fit mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
+                                <a href="#learn-more">View Events Calendar</a>
+                            </button>
                     </div>
                     <div>
                         <img src="./assets/images/event.png" alt="Innovation for Impact 2025"
@@ -285,7 +307,8 @@
                         </span>
                         <div class="flex flex-col text-left ml-4">
                             <p class="text-3xl md:text-5xl font-bold mb-2">150+</p>
-                            <p class="text-base md:text-lg text-gray-800">Indigenous Communities & Organisations Alliances</p>
+                            <p class="text-base md:text-lg text-gray-800">Indigenous Communities & Organisations
+                                Alliances</p>
                         </div>
                     </div>
                     <div class="flex items-center">
@@ -340,62 +363,60 @@
         <!-- Business Facilitation Section -->
         <section id="business-facilitation" class="bg-white py-12 md:py-20">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8 text-center" data-aos="zoom-in">
-                <h2 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif">Business Facilitation & Operational Models</h2>
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif">Business Facilitation & Operational
+                    Models</h2>
                 <p class="text-gray-600 mt-4 mb-8 max-w-2xl mx-auto">
-                    Our Chamber adopts multiple facilitation frameworks to accelerate international business engagement and sustainable development. These include:
+                    Our Chamber adopts multiple facilitation frameworks to accelerate international business engagement
+                    and sustainable development. These include:
                 </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2">
-                    <img src="./assets/images/left-business.png" alt="facilitation" class="w-full h-auto mb-4 md:mb-0" data-aos="fade-up">
-                    <div class="md:col-span-2" data-aos="fade-up" data-aos-delay="100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2 text-left">
-                            <div class="border border-gray-200 p-6 rounded-[16px]">
-                                <span class="text-lg md:text-xl font-bold">Market Entry Support</span>
-                                <ul class="list-disc pl-6 mt-4 text-sm md:text-base">
-                                    <li>Trade & Regulatory Briefings</li>
-                                    <li>Local Partner Sourcing & Due Diligence</li>
-                                    <li>Business Incorporation Assistance</li>
-                                    <li>Legal, Tax, and Labor Compliance Support</li>
-                                </ul>
-                            </div>
-                            <div class="border border-gray-200 p-6 rounded-[16px]">
-                                <span class="text-lg md:text-xl font-bold">Investment Pipeline Development</span>
-                                <ul class="list-disc pl-6 mt-4 text-sm md:text-base">
-                                    <li>Deal Origination and Validation</li>
-                                    <li>Project Profiling and Pitch Preparation</li>
-                                    <li>Capital Access Strategies</li>
-                                    <li>Coordination with Investment Authorities (e.g., GIPC, Invest Alberta)</li>
-                                </ul>
-                            </div>
-                            <div class="border border-gray-200 p-6 rounded-[16px]">
-                                <span class="text-lg md:text-xl font-bold">Capacity Building & Knowledge Exchange</span>
-                                <ul class="list-disc pl-6 mt-4 text-sm md:text-base">
-                                    <li>Executive Education and Certification Programs</li>
-                                    <li>Innovation Labs and Incubation for Startups</li>
-                                    <li>ESG (Environmental, Social, Governance) Compliance Training</li>
-                                    <li>Smart Technology & Green Energy Transformation Support</li>
-                                </ul>
-                            </div>
-                            <div class="border border-gray-200 p-6 rounded-[16px]">
-                                <span class="text-lg md:text-xl font-bold">Bilateral and Multilateral Engagement</span>
-                                <ul class="list-disc pl-6 mt-4 text-sm md:text-base">
-                                    <li>Ministerial Roundtables and Industry Consultations</li>
-                                    <li>Diaspora Capital Mobilization</li>
-                                    <li>Canada-Africa business forums</li>
-                                    <li>Participation in government missions</li>
-                                </ul>
-                            </div>
-                            <div class="border border-gray-200 p-6 rounded-[16px]">
-                                <span class="text-lg md:text-xl font-bold">Diaspora-Led Economic Integration</span>
-                                <ul class="list-disc pl-6 mt-4 text-sm md:text-base">
-                                    <li>Skills and knowledge repatriation platforms</li>
-                                    <li>Think Tank initiatives</li>
-                                    <li>Youth entrepreneurship support</li>
-                                    <li>Diaspora Bond and community investment projects</li>
-                                </ul>
-                            </div>
+                <div class="grid md:grid-cols-2 gap-16">
+                    <img src="./assets/images/left-business.png" alt="facilitation" class="w-full h-auto"
+                        data-aos="fade-up">
+                    <div class="flex flex-col gap-8 text-left" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                                style="font-variation-settings: 'wght' 200">blur_circular
+                            </span>
+                            <span class="text-lg">Market Entry Support</span>
                         </div>
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                                style="font-variation-settings: 'wght' 200">blur_circular
+                            </span>
+                            <span class="text-lg">Investment Pipeline Development</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                                style="font-variation-settings: 'wght' 200">blur_circular
+                            </span>
+                            <span class="text-lg">Capacity Building & Knowledge Exchange</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                                style="font-variation-settings: 'wght' 200">blur_circular
+                            </span>
+                            <span class="text-lg">Bilateral and Multilateral Engagement</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                                style="font-variation-settings: 'wght' 200">blur_circular
+                            </span>
+                            <span class="text-lg">Diaspora-Led Economic Integration</span>
+                        </div>
+                        <button
+                                class=" w-full md:w-fit mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
+                                <a href="#learn-more">Read more</a>
+                            </button>
                     </div>
+                    
                 </div>
+                
+            </div>
         </section>
 
         <!-- Key Partners Section -->
@@ -444,7 +465,8 @@
                                 <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
                                     <img src="./assets/images/logos/bost.jpg" alt="partner"
                                         class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Bulk Oil Storage and Transportation Company Limited</p>
+                                    <p class="text-xs md:text-sm">Bulk Oil Storage and Transportation Company Limited
+                                    </p>
                                 </div>
                             </li>
                             <li class="splide__slide">
@@ -474,13 +496,17 @@
                             Become a Member
                         </h2>
                         <p class="text-base md:text-lg text-gray-700 mb-6">
-                            Join the Canada Ghana Chamber of Commerce – Calgary Chapter and gain exclusive access to a powerful business network, strategic partnerships, bilateral trade missions, and market insights across Canada and Ghana.
+                            Join the Canada Ghana Chamber of Commerce – Calgary Chapter and gain exclusive access to a
+                            powerful business network, strategic partnerships, bilateral trade missions, and market
+                            insights across Canada and Ghana.
                         </p>
                         <div class="flex flex-col md:flex-row gap-2">
-                            <button class="mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
+                            <button
+                                class="mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
                                 <a href="#learn-more">Learn more</a>
                             </button>
-                            <button class="mt-4 md:mt-6 border border-[#F5C567] bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
+                            <button
+                                class="mt-4 md:mt-6 border border-[#F5C567] bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
                                 <a href="#learn-more">Contact Us</a>
                             </button>
                         </div>
@@ -497,7 +523,8 @@
                         <img src="./assets/images/contact-us.png" alt="Innovation for Impact 2025"
                             class="h-64 md:h-[575px] w-full object-cover" data-aos="fade-up">
                     </div>
-                    <div class="h-auto md:h-[621px] flex flex-col bg-[#0B1633] pl-4 md:pl-16 pr-4 md:pr-[128px] py-8 md:py-40 md:rounded-l-2xl">
+                    <div
+                        class="h-auto md:h-[621px] flex flex-col bg-[#0B1633] pl-4 md:pl-16 pr-4 md:pr-[128px] py-8 md:py-40 md:rounded-l-2xl">
                         <h2 class="text-3xl md:text-5xl font-bold text-white font-serif mb-4">
                             Contact Us
                         </h2>
@@ -505,16 +532,20 @@
                             Together, let’s build a resilient and inclusive trade corridor between Canada and Ghana.
                         </p>
                         <div class="flex gap-4 items-center">
-                            <span class="hidden md:block text-2xl md:text-4xl material-symbols-outlined bg-[#F5C567] rounded-full p-2"
+                            <span
+                                class="hidden md:block text-2xl md:text-4xl material-symbols-outlined bg-[#F5C567] rounded-full p-2"
                                 style="font-variation-settings: 'wght' 200">call
                             </span>
-                            <a href="tel:+1 587-585-7324" class="underline text-white text-sm md:text-base">+1 587-585-7324</a>
+                            <a href="tel:+1 587-585-7324" class="underline text-white text-sm md:text-base">+1
+                                587-585-7324</a>
                         </div>
                         <div class="flex gap-4 items-center mt-4">
-                            <span class="hidden md:block text-2xl md:text-4xl material-symbols-outlined bg-[#F5C567] rounded-full p-2"
+                            <span
+                                class="hidden md:block text-2xl md:text-4xl material-symbols-outlined bg-[#F5C567] rounded-full p-2"
                                 style="font-variation-settings: 'wght' 200">mail
                             </span>
-                            <a href="mailto:membership@canadaghanachambercalgary.org" class="underline text-white text-sm md:text-base">membership@canadaghanachambercalgary.org</a>
+                            <a href="mailto:membership@canadaghanachambercalgary.org"
+                                class="underline text-white text-sm md:text-base">membership@canadaghanachambercalgary.org</a>
                         </div>
                     </div>
                 </div>
@@ -529,19 +560,26 @@
                         <div class="flex items-center">
                             <img src="./assets/images/logo.png" alt="Logo"
                                 class="h-10 md:h-12 w-auto mr-4 rounded-full border-2 border-white bg-white object-cover">
-                            <span class="text-xs md:text-sm text-left font-serif w-48 md:w-80">CANADA GHANA CHAMBER OF COMMERCE, CALGARY CHAPTER</span>
+                            <span class="text-xs md:text-sm text-left font-serif w-48 md:w-80">CANADA GHANA CHAMBER OF
+                                COMMERCE, CALGARY CHAPTER</span>
                         </div>
                         <p class="text-left text-xs md:text-sm mt-2">Connecting Businesses to Nations</p>
                     </div>
                     <div class="items-start mt-8 md:mt-0">
                         <p class="text-left text-base mb-2 font-semibold">Quick Links</p>
                         <ul>
-                            <li class="text-left text-xs md:text-sm mb-2"><a href="#hero" class="hover:text-indigo-600">Home</a></li>
-                            <li class="text-left text-xs md:text-sm mb-2"><a href="#who-we-are" class="hover:text-indigo-600">Who We Are</a></li>
-                            <li class="text-left text-xs md:text-sm mb-2"><a href="#what-we-do" class="hover:text-indigo-600">What We Do</a></li>
-                            <li class="text-left text-xs md:text-sm mb-2"><a href="#business-facilitation" class="hover:text-indigo-600">Business Facilitation</a></li>
-                            <li class="text-left text-xs md:text-sm mb-2"><a href="#key-partners" class="hover:text-indigo-600">Key Partners</a></li>
-                            <li class="text-left text-xs md:text-sm mb-2"><a href="#contact" class="hover:text-indigo-600">Contact Us</a></li>
+                            <li class="text-left text-xs md:text-sm mb-2"><a href="#hero"
+                                    class="hover:text-indigo-600">Home</a></li>
+                            <li class="text-left text-xs md:text-sm mb-2"><a href="#who-we-are"
+                                    class="hover:text-indigo-600">Who We Are</a></li>
+                            <li class="text-left text-xs md:text-sm mb-2"><a href="#what-we-do"
+                                    class="hover:text-indigo-600">What We Do</a></li>
+                            <li class="text-left text-xs md:text-sm mb-2"><a href="#business-facilitation"
+                                    class="hover:text-indigo-600">Business Facilitation</a></li>
+                            <li class="text-left text-xs md:text-sm mb-2"><a href="#key-partners"
+                                    class="hover:text-indigo-600">Key Partners</a></li>
+                            <li class="text-left text-xs md:text-sm mb-2"><a href="#contact"
+                                    class="hover:text-indigo-600">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -552,7 +590,8 @@
     <!-- Footer -->
     <footer class="bg-[#0B1633] text-white py-6 md:py-8">
         <div class="max-w-screen-xl mx-auto px-4 md:px-6 text-center">
-            <p class="text-xs md:text-base">&copy; 2025 Canada Ghana Chamber of Commerce, Calgary Chapter, CGCCCC. All Rights Reserved.</p>
+            <p class="text-xs md:text-base">&copy; 2025 Canada Ghana Chamber of Commerce, Calgary Chapter, CGCCCC. All
+                Rights Reserved.</p>
         </div>
     </footer>
 
@@ -577,4 +616,5 @@
         }).mount();
     </script>
 </body>
+
 </html>
