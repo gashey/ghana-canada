@@ -51,16 +51,26 @@
     <header class="bg-[#0B1633] shadow-md sticky top-0 z-50 w-full">
         <nav x-data="{ mobileMenuOpen: false }"
             class="max-w-screen-xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between text-white">
-            <a href="#" class="flex items-center space-x-2">
+            <!-- <a href="#" class="flex items-center space-x-2">
                 <img src="./assets/images/logo.png" alt="Logo"
                     class="h-10 w-10 rounded-full border-2 border-white bg-white object-cover">
                 <span class="text-lg md:text-2xl font-bold">C.G.C.C.C</span>
-            </a>
+            </a> -->
+            <div class="flex items-center">
+                <div class=" w-[40px] h-[40px] bg-white rounded-full">
+                    <img class=" border-white overflow-hidden" src="./assets/images/logo.png" alt="C.G.C.C.C. Logo">
+                </div>
+                <div class="flex h-8 w-[1px] bg-white mx-2">
+                </div>
+                <span class="text-xs font-[IBM-Plex-Serif] text-white">CANADA GHANA CHAMBER OF COMMERCE,
+                    <br> CALGARY CHAPTER ( C.G.C.C.C. )</span>
+            </div>
             <div class="hidden md:flex items-center space-x-6">
-                <a href="#hero" class="hover:text-indigo-600 font-medium">Home</a>
-                <a href="#who-we-are" class="hover:text-indigo-600 font-medium">About Us</a>
-                <a href="#what-we-do" class="hover:text-indigo-600 font-medium">Membership</a>
-                <a href="#business-facilitation" class="hover:text-indigo-600 font-medium">The Team</a>
+                <a href="./index.html" class="hover:text-indigo-600 font-medium">Home</a>
+                <a href="./about-us.html" class="hover:text-indigo-600 font-medium">About Us</a>
+                <a href="./the-team.html" class="hover:text-indigo-600 font-medium">The Team</a>
+                <a href="./our-partners.html" class="hover:text-indigo-600 font-medium">Partners</a>
+                <a href="./membership.html" class="hover:text-indigo-600 font-medium">Membership</a>
                 <a href="#key-partners" class="hover:text-indigo-600 font-medium">Gallery</a>
                 <a href="#contact" class="hover:text-indigo-600 font-medium">Contact Us</a>
             </div>
@@ -69,11 +79,11 @@
             </button>
             <div x-show="mobileMenuOpen" x-transition
                 class="absolute top-full left-0 w-full bg-[#0B1633] text-white flex flex-col md:hidden shadow-lg z-50">
-                <a href="#hero" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Home</a>
-                <a href="#who-we-are" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About Us</a>
-                <a href="#what-we-do" @click="mobileMenuOpen = false"
+                <a href="./index.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Home</a>
+                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About Us</a>
+                <a href="./membership.html" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Membership</a>
-                <a href="#business-facilitation" @click="mobileMenuOpen = false"
+                <a href="./the-team.html" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">The Team</a>
                 <a href="#key-partners" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Gallery</a>
@@ -516,7 +526,7 @@
         </section>
 
         <!-- Contact Us Section -->
-        <section class="bg-[#F5C567] py-12 md:py-24">
+        <section id="contact" class="bg-[#F5C567] py-12 md:py-24"><a href="#contact"></a>
             <div class="mx-auto" data-aos="zoom-in">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
                     <div>
