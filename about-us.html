@@ -51,7 +51,7 @@
         <nav x-data="{ mobileMenuOpen: false }"
             class="max-w-screen-xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between text-white">
             <div class="flex items-center">
-                <div class=" w-[40px] h-[40px] bg-white rounded-full">
+                <div class=" w-[40px] bg-white rounded-full">
                     <img class=" border-white overflow-hidden" src="./assets/images/logo.png" alt="C.G.C.C.C. Logo">
                 </div>
                 <div class="flex h-8 w-[1px] bg-white mx-2">
@@ -74,12 +74,13 @@
             <div x-show="mobileMenuOpen" x-transition
                 class="absolute top-full left-0 w-full bg-[#0B1633] text-white flex flex-col md:hidden shadow-lg z-50">
                 <a href="./index.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Home</a>
-                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About
-                    Us</a>
+                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About Us</a>
+                <a href="./the-team.html" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">The Team</a>
+                    <a href="./our-partners.html" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">Partners</a>
                 <a href="./membership.html" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Membership</a>
-                <a href="./the-team.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">The
-                    Team</a>
                 <a href="#key-partners" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Gallery</a>
                 <a href="#contact" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Contact Us</a>
@@ -90,7 +91,7 @@
     <main>
         <img class="object-cover w-full h-72" src="./assets/images/AboutImage.jpg" alt="AboutImage">
 
-        <!--About -->
+        <!-- About -->
         <section id="who-we-are" class="py-12 md:py-24">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div data-aos="fade-up" data-aos-delay="200">
@@ -110,45 +111,54 @@
         </section>
 
         <!--Our Vision-->
-        <div class="flex max-w-screen-xl mx-auto justify-between px-8 gap-4">
-            <div class="bg-[#EDB96B] w-1/2 p-16 text-[#6D6150]" data-aos="zoom-in">
-                <h2 class="text-2xl font-semibold mb-8">Our Vision</h2>
-                <p class="text-lg text-gray-600">To be a catalyst for Africa–Canada economic integration and a bridge
-                    for
-                    shared
-                    prosperity between communities,
-                    institutions, and industries. The Chamber seeks to position Calgary and Alberta as leading gateways
-                    for
-                    trade
-                    and investment with Ghana and the wider West African region.
-                    <br><br>
-                    We envision CGCC–Calgary as a recognized hub of influence, advancing industrial policy, technology
-                    transfer,
-                    renewable energy investment, youth entrepreneurship, and infrastructure innovation between both
-                    nations.
-                </p>
+        <section>
+            <div class="flex flex-col md:flex-row max-w-screen-xl mx-auto justify-between md:px-8 md:gap-4">
+                <div class="bg-[#EDB96B] md:w-1/2 p-4 md:p-16 text-[#6D6150]" data-aos="zoom-in">
+                    <h2 class="text-2xl font-semibold mb-8">Our Vision</h2>
+                    <p class="text-lg text-gray-600">To be a catalyst for Africa–Canada economic integration and a
+                        bridge
+                        for
+                        shared
+                        prosperity between communities,
+                        institutions, and industries. The Chamber seeks to position Calgary and Alberta as leading
+                        gateways
+                        for
+                        trade
+                        and investment with Ghana and the wider West African region.
+                        <br><br>
+                        We envision CGCC–Calgary as a recognized hub of influence, advancing industrial policy,
+                        technology
+                        transfer,
+                        renewable energy investment, youth entrepreneurship, and infrastructure innovation between both
+                        nations.
+                    </p>
+                </div>
+                <!--The default widths like w-xl were not affecting the image that's why I customized it-->
+                <img class="md:w-1/2 hidden md:block" src="./assets/images/VisionImage.jpg" alt="Checkered Image">
             </div>
-            <!--The default widths like w-xl were not affecting the image that's why I customized it-->
-            <img class="w-1/2" src="./assets/images/VisionImage.jpg" alt="Checkered Image">
-        </div>
+        </section>
 
         <!--Our Mission-->
-
-        <div class="flex max-w-screen-xl mx-auto justify-between px-8 gap-4 mt-4">
-            <img class="w-1/2" src="./assets/images/MissionImage.png" alt="Checkered Image">
-            <div class="bg-[#061432] text-white w-1/2 p-16" data-aos="zoom-in">
-                <h2 class="text-xl font-semibold mb-8">Our Mission</h2>
-                <p class="text-lg">To create an inclusive and transformative platform for professionals, entrepreneurs,
-                    and
-                    institutions—particularly from the Ghanaian Canadian and Alberta business communities—to
-                    collaborate,
-                    innovate, and lead economic growth in both Canada and Ghana. We are dedicated to supporting business
-                    development, international expansion, and strategic policy engagement through high-value programming
-                    and advocacy.</p>
+        <section>
+            <div class="flex flex-col md:flex-row max-w-screen-xl mx-auto justify-between md:px-8 md:gap-4 md:mt-4">
+                <img class="md:w-1/2 hidden md:block" src="./assets/images/MissionImage.png" alt="Checkered Image">
+                <div class="bg-[#061432] text-white md:w-1/2 p-4  md:p-16" data-aos="zoom-in">
+                    <h2 class="text-xl font-semibold mb-8">Our Mission</h2>
+                    <p class="text-lg">To create an inclusive and transformative platform for professionals,
+                        entrepreneurs,
+                        and
+                        institutions—particularly from the Ghanaian Canadian and Alberta business communities—to
+                        collaborate,
+                        innovate, and lead economic growth in both Canada and Ghana. We are dedicated to supporting
+                        business
+                        development, international expansion, and strategic policy engagement through high-value
+                        programming
+                        and advocacy.</p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!--Core Values-->
+        <!--Our Core Values-->
         <section class="py-12 md:py-24">
             <div class="max-w-screen-xl mx-auto px-8" data-aos="zoom-in">
                 <h4 class="font-serif text-center text-4xl font-semibold mb-8">Our Core Values</h4>
@@ -157,9 +167,8 @@
                     foundational values:</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-16 max-w-screen-xl mx-auto px-8" data-aos="zoom-in">
-                <div class="bg-gray-200 p-8 rounded-2xl">
-                    <!--When I tried using material-symbols-outlined (show him the picture)-->
+            <div class="grid md:grid-cols-3 gap-4 md:gap-16 max-w-screen-xl mx-auto px-4 md:px-8" data-aos="zoom-in">
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl">
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
                             style="font-variation-settings: 'wght' 400">finance_mode
@@ -172,8 +181,7 @@
                         legal frameworks of both Ghana and Canada</p>
                 </div>
 
-                <div class="bg-gray-200 p-8 rounded-2xl">
-                    <!--When I tried using material-symbols-outlined (show him the picture)-->
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl">
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
                             style="font-variation-settings: 'wght' 400">finance_mode
@@ -185,7 +193,7 @@
                         partnerships.</p>
                 </div>
 
-                <div class="bg-gray-200 p-8 rounded-2xl">
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl">
                     <!--When I tried using material-symbols-outlined (show him the picture)-->
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
@@ -198,7 +206,7 @@
                         and sustainable business practices.</p>
                 </div>
 
-                <div class="bg-gray-200 p-8 rounded-2xl">
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl">
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
                             style="font-variation-settings: 'wght' 400">finance_mode
@@ -209,7 +217,7 @@
                         commerce and entrepreneurship among members.</p>
                 </div>
 
-                <div class="bg-gray-200 p-8 rounded-2xl rounded-2xl">
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl rounded-2xl">
                     <!--When I tried using material-symbols-outlined (show him the picture)-->
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
@@ -223,7 +231,7 @@
 
 
 
-                <div class="bg-gray-200 p-8 rounded-2xl rounded-2xl">
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl rounded-2xl">
                     <!--When I tried using material-symbols-outlined (show him the picture)-->
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
@@ -237,7 +245,7 @@
 
 
 
-                <div class="bg-gray-200 p-8 rounded-2xl">
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl">
                     <!--When I tried using material-symbols-outlined (show him the picture)-->
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
@@ -249,7 +257,7 @@
                         and business collaboration between Ghana and Canada.</p>
                 </div>
 
-                <div class="bg-gray-200 p-8 rounded-2xl">
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl">
                     <!--When I tried using material-symbols-outlined (show him the picture)-->
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
@@ -264,7 +272,7 @@
 
 
 
-                <div class="bg-gray-200 p-8 rounded-2xl">
+                <div class="bg-gray-200 p-4 md:p-8 rounded-2xl">
                     <!--When I tried using material-symbols-outlined (show him the picture)-->
                     <div class="flex items-center gap-2">
                         <span class="text-xl md:text-3xl material-symbols-outlined"
@@ -282,7 +290,7 @@
 
         <!--BUSINESS FACILITATION-->
         <section id="business-facilitation" class="">
-            <div class="max-w-screen-xl mx-auto px-8" data-aos="zoom-in">
+            <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-aos="zoom-in">
                 <h4 class="font-serif text-center text-4xl font-semibold">Business Facilitation
                     & Operation Models</h4>
                 <p class="text-center text-[#9A989B] mt-8 mb-16">Our Chamber adopts multiple facilitation frameworks to
@@ -290,8 +298,8 @@
                     international <br>business engagement and sustainable development. These include:</p>
             </div>
 
-            <div class="max-w-screen-xl mx-auto px-8 pb-12 md:pb-24" data-aos="zoom-in">
-                <div class="grid grid-cols-2 gap-16">
+            <div class="max-w-screen-xl mx-auto px-4 md:px-8 pb-12 md:pb-24" data-aos="zoom-in">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-16">
                     <div>
                         <h5 class="text-lg font-semibold">Market Entry Support</h5>
                         <div class="bg-red-600 w-[75px] h-1 mb-2"></div>

@@ -75,12 +75,13 @@
             <div x-show="mobileMenuOpen" x-transition
                 class="absolute top-full left-0 w-full bg-[#0B1633] text-white flex flex-col md:hidden shadow-lg z-50">
                 <a href="./index.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Home</a>
-                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About
-                    Us</a>
+                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About Us</a>
+                <a href="./the-team.html" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">The Team</a>
+                    <a href="./our-partners.html" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">Partners</a>
                 <a href="./membership.html" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Membership</a>
-                <a href="./the-team.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">The
-                    Team</a>
                 <a href="#key-partners" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Gallery</a>
                 <a href="#contact" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Contact Us</a>
@@ -118,7 +119,7 @@
         <!-- Founder Section -->
         <section class="bg-white" x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-aos="zoom-in">
-                <div class="flex gap-8 md:gap-16 items-center">
+                <div class="flex md:flex-row flex-col gap-8 md:gap-16 items-center">
                     <div class="">
                         <!-- Placeholder for image, can be replaced with actual image -->
                         <img src="./assets/images/team/president.png" alt="Innovation for Impact 2025"
@@ -187,7 +188,7 @@
         <!-- Vice President Section -->
         <section class="bg-white py-12 md:py-24" x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-aos="zoom-in">
-                <div class="flex gap-8 md:gap-16 items-center">
+                <div class="flex flex-col-reverse md:flex-row gap-8 md:gap-16 items-center">
                     <div class="flex-1">
                         <h2 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif mb-4">
                             Vice President
@@ -256,7 +257,7 @@
         <!-- Executive Secretary Section -->
         <section class="bg-white" x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-aos="zoom-in">
-                <div class="flex gap-8 md:gap-16 items-center">
+                <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
                     <div class="">
                         <!-- Placeholder for image, can be replaced with actual image -->
                         <img src="./assets/images/team/executive-secretary.png" alt="Innovation for Impact 2025"
@@ -376,7 +377,7 @@
                 <h2 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif mb-16 md:mb-24">
                     Chamber Advisory Committee and Patrons
                 </h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-16 md:gap-32 items-start">
+                <div class="grid md:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-16 md:gap-32 items-start">
                     <div class="flex flex-col justify-center text-center">
                         <img src="./assets/images/team/patron1.png" alt="InvestAlberta" class="mx-auto">
                         <h1 class="text-lg md:text-xl font-bold text-gray-900 font-serif mb-4">Patron #1</h1>

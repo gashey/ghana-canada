@@ -75,12 +75,13 @@
             <div x-show="mobileMenuOpen" x-transition
                 class="absolute top-full left-0 w-full bg-[#0B1633] text-white flex flex-col md:hidden shadow-lg z-50">
                 <a href="./index.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Home</a>
-                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About
-                    Us</a>
+                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About Us</a>
+                <a href="./the-team.html" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">The Team</a>
+                    <a href="./our-partners.html" @click="mobileMenuOpen = false"
+                    class="py-3 px-6 hover:bg-indigo-900">Partners</a>
                 <a href="./membership.html" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Membership</a>
-                <a href="./the-team.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">The
-                    Team</a>
                 <a href="#key-partners" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Gallery</a>
                 <a href="#contact" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Contact Us</a>
@@ -120,7 +121,7 @@
         <!-- Founder Section -->
         <section class="bg-white" x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-aos="zoom-in">
-                <div class="flex gap-8 md:gap-16 items-start">
+                <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
                     <div class="">
                         <!-- Placeholder for image, can be replaced with actual image -->
                         <img src="./assets/images/membership.png" alt="Innovation for Impact 2025"
@@ -160,7 +161,7 @@
                 <h2 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif mb-4 md:mb-8">Member Benefits</h2>
                 <p class="text-base md:text-lg text-gray-700 mb-16">Our operations and member services are guided by the
                     following foundational values:</p>
-                <div class="grid grid-cols-3 sm:grid-cols-3 gap-16">
+                <div class="grid md:grid-cols-3 sm:grid-cols-3 gap-4 md:gap-16">
                     <div class="flex justify-center text-center bg-gray-100 p-8 rounded-lg">
                         <span class="text-xl md:text-4xl material-symbols-outlined"
                             style="font-variation-settings: 'wght' 300">finance_mode
@@ -235,7 +236,7 @@
                 <h2 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif mb-16 md:mb-24">
                     Membership Packages and Annual Fees
                 </h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-16 md:gap-8 items-start">
+                <div class="grid md:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 md:gap-16 md:gap-8 items-start">
                     <div class="flex flex-col text-left border border-[#F5C567] p-8 rounded-[16px] bg-white h-[700px]">
                         <h1 class="text-lg md:text-3xl font-bold text-gray-900 font-serif mb-4">
                             Individual Membership
@@ -436,7 +437,7 @@
                     VIP & VVIP Membership Plans
                 </h2>
                 <p class="mb-8 md:mb-16">Exclusive tiers for distinguished leaders, diaspora investors, and multinational executives.</p>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-16 md:gap-8 items-start">
+                <div class="grid md:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 md:gap-16 md:gap-8 items-start">
                     <div class="flex flex-col text-left border border-gray-200 p-8 rounded-[16px] bg-gray-100 h-[800px]">
                         <h1 class="text-lg md:text-3xl font-bold text-gray-900 font-serif mb-4">
                             Silver Plan - VIP
