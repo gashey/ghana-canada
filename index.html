@@ -71,7 +71,7 @@
                 <a href="./the-team.html" class="hover:text-indigo-600 font-medium">The Team</a>
                 <a href="./our-partners.html" class="hover:text-indigo-600 font-medium">Partners</a>
                 <a href="./membership.html" class="hover:text-indigo-600 font-medium">Membership</a>
-                <a href="#key-partners" class="hover:text-indigo-600 font-medium">Gallery</a>
+                <a href="./gallery.html" class="hover:text-indigo-600 font-medium">Gallery</a>
                 <a href="#contact" class="hover:text-indigo-600 font-medium">Contact Us</a>
             </div>
             <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden focus:outline-none">
@@ -80,14 +80,15 @@
             <div x-show="mobileMenuOpen" x-transition
                 class="absolute top-full left-0 w-full bg-[#0B1633] text-white flex flex-col md:hidden shadow-lg z-50">
                 <a href="./index.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Home</a>
-                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About Us</a>
-                <a href="./the-team.html" @click="mobileMenuOpen = false"
-                    class="py-3 px-6 hover:bg-indigo-900">The Team</a>
-                    <a href="./our-partners.html" @click="mobileMenuOpen = false"
+                <a href="./about-us.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">About
+                    Us</a>
+                <a href="./the-team.html" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">The
+                    Team</a>
+                <a href="./our-partners.html" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Partners</a>
                 <a href="./membership.html" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Membership</a>
-                <a href="#key-partners" @click="mobileMenuOpen = false"
+                <a href="./gallery.html" @click="mobileMenuOpen = false"
                     class="py-3 px-6 hover:bg-indigo-900">Gallery</a>
                 <a href="#contact" @click="mobileMenuOpen = false" class="py-3 px-6 hover:bg-indigo-900">Contact Us</a>
             </div>
@@ -196,11 +197,11 @@
                         <div class="mb-8 md:mb-12 text-left">
                             <h2 class="text-2xl md:text-4xl font-bold text-white font-serif">Who We Are</h2>
                             <p class="text-white text-base md:text-lg mt-4 max-w-2xl">
-                            The Canada Ghana Chamber of Commerce – Calgary Chapter (CGCC–Calgary) is a
-                            results-oriented, globally engaged business chamber focused on strengthening bilateral
-                            economic relations between Canada and Ghana. As part of the larger Canada Ghana Chamber
-                            of Commerce (CANCHAM) network, we serve as a pivotal platform connecting Alberta’s
-                            global industrial and innovation hub with West Africa’s emerging markets.
+                                The Canada Ghana Chamber of Commerce – Calgary Chapter (CGCC–Calgary) is a
+                                results-oriented, globally engaged business chamber focused on strengthening bilateral
+                                economic relations between Canada and Ghana. As part of the larger Canada Ghana Chamber
+                                of Commerce (CANCHAM) network, we serve as a pivotal platform connecting Alberta’s
+                                global industrial and innovation hub with West Africa’s emerging markets.
                             </p>
                             <button
                                 class="mt-6 bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
@@ -265,41 +266,60 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Event Section -->
         <section class="bg-gray-150 py-12 md:py-24">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-aos="zoom-in">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
                     <div>
-                        <h2 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif mb-4">
+                        <h2 class="text-lg md:text-2xl text-gray-800 mb-4">
                             Upcoming Event
                         </h2>
-                        <h3 class="text-lg md:text-2xl text-gray-800 mb-4">
-                            INNOVATION FOR IMPACT 2025
+                        <h3 class="text-2xl md:text-4xl font-bold text-gray-900 font-serif mb-4">
+                            The Ghana–Canada Agricultural & Agri-Business Summit and Field Trip
                         </h3>
                         <p class="text-base md:text-lg text-gray-700 mb-6">
-                            Join thought leaders, innovators, and changemakers across Africa for a high-energy day of
-                            insightful talks, live demos, and networking opportunities. Discover how technology, design,
-                            and community can drive real change.
+                            This is a high-level bilateral mission designed to strengthen agricultural cooperation,
+                            promote trade and investment, and foster knowledge exchange between Ghana and Alberta. This
+                            strategic engagement brings together government leaders, industry stakeholders, and academic
+                            institutions to advance innovation, food security, and sustainable agribusiness
+                            partnerships.
                         </p>
                         <div
-                            class="flex flex-col md:flex-row justify-center text-center items-center gap-6 md:gap-8 mb-8">
+                            class="flex flex-col md:flex-row justify-center text-center items-start gap-4 md:gap-6 mb-8">
                             <div class="text-gray-800">
-                                <p class="text-xs md:text-sm uppercase tracking-wider">📅 Date</p>
-                                <p class="text-base font-semibold">September 21, 2025</p>
+                                <p class="text-xs md:text-sm uppercase flex justify-center items-center tracking-wider">
+                                    <span class="text-2xl md:text-3xl material-symbols-outlined"
+                                        style="font-variation-settings: 'wght' 300">calendar_today
+                                    </span> Date</p>
+                                <p class="text-base font-semibold text-center">Sunday, October 27,
+                                    2025<br />-<br />Friday, October 31, 2025</p>
                             </div>
                             <div class="text-gray-800">
-                                <p class="text-xs md:text-sm uppercase tracking-wider">🕒 Time</p>
-                                <p class="text-base font-semibold">9:00 am – 5:00 pm</p>
+                                <p class="text-xs md:text-sm uppercase tracking-wider"><span
+                                        class="text-2xl md:text-3xl material-symbols-outlined"
+                                        style="font-variation-settings: 'wght' 300">location_on
+                                    </span> Location</p>
+                                <p class="text-base font-semibold">Alberta, Canada - Calgary</p>
                             </div>
                             <div class="text-gray-800">
-                                <p class="text-xs md:text-sm uppercase tracking-wider">📍 Location</p>
-                                <p class="text-base font-semibold">Accra Digital Centre, Ghana</p>
+                                <p class="text-xs md:text-sm uppercase tracking-wider"><span
+                                        class="text-2xl md:text-3xl material-symbols-outlined"
+                                        style="font-variation-settings: 'wght' 300">map_search
+                                    </span> Field Trips</p>
+                                <p class="text-base font-semibold">
+                                    Claresholm<br />Lethbridge<br />Edmonton<br />Medicine Hat</p>
                             </div>
                         </div>
-                        <button
-                                class=" w-full md:w-fit mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
-                                <a href="#learn-more">View Events Calendar</a>
-                            </button>
+                        <div class="flex gap-4">
+                            <a href="https://form.jotform.com/ndccan2020/can-ghana-agric-investment-summit"
+                                class="text-center w-full md:w-64 mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base"
+                                    target="_blank">Register</a>
+                            <a
+                                class="border border-gray-400 text-center w-full md:w-64 mt-4 md:mt-6 bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base" 
+                                href="./assets/documents/PROGRAM ITINERARY OUTLINE UPDATED 1.1.pdf"
+                                    target="_blank">View program itinerary</a>
+                        </div>
+
                     </div>
                     <div>
                         <img src="./assets/images/event.png" alt="Innovation for Impact 2025"
@@ -386,48 +406,43 @@
                         data-aos="fade-up">
                     <div class="flex flex-col gap-8 text-left" data-aos="fade-up" data-aos-delay="100">
                         <div class="flex items-center gap-4">
-                            <span
-                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                            <span class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
                                 style="font-variation-settings: 'wght' 200">blur_circular
                             </span>
                             <span class="text-lg">Market Entry Support</span>
                         </div>
                         <div class="flex items-center gap-4">
-                            <span
-                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                            <span class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
                                 style="font-variation-settings: 'wght' 200">blur_circular
                             </span>
                             <span class="text-lg">Investment Pipeline Development</span>
                         </div>
                         <div class="flex items-center gap-4">
-                            <span
-                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                            <span class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
                                 style="font-variation-settings: 'wght' 200">blur_circular
                             </span>
                             <span class="text-lg">Capacity Building & Knowledge Exchange</span>
                         </div>
                         <div class="flex items-center gap-4">
-                            <span
-                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                            <span class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
                                 style="font-variation-settings: 'wght' 200">blur_circular
                             </span>
                             <span class="text-lg">Bilateral and Multilateral Engagement</span>
                         </div>
                         <div class="flex items-center gap-4">
-                            <span
-                                class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
+                            <span class="text-xl md:text-3xl material-symbols-outlined text-[#F5C567]"
                                 style="font-variation-settings: 'wght' 200">blur_circular
                             </span>
                             <span class="text-lg">Diaspora-Led Economic Integration</span>
                         </div>
                         <button
-                                class=" w-full md:w-fit mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
-                                <a href="#learn-more">Read more</a>
-                            </button>
+                            class=" w-full md:w-fit mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base">
+                            <a href="#learn-more">Read more</a>
+                        </button>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </section>
 
