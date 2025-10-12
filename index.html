@@ -48,7 +48,7 @@
 <body class="bg-gray-100 text-gray-800 font-sans">
 
     <!-- Header & Navigation -->
-    <header class="bg-[#0B1633] shadow-md sticky top-0 z-50 w-full">
+    <header class="bg-black shadow-md sticky top-0 z-50 w-full">
         <nav x-data="{ mobileMenuOpen: false }"
             class="max-w-screen-xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between text-white">
             <!-- <a href="#" class="flex items-center space-x-2">
@@ -57,8 +57,9 @@
                 <span class="text-lg md:text-2xl font-bold">C.G.C.C.C</span>
             </a> -->
             <div class="flex items-center">
-                <div class="flex w-[40px] bg-white rounded-full">
-                    <img class=" border-white overflow-hidden" src="./assets/images/logo.png" alt="C.G.C.C.C. Logo">
+                <div class="flex w-[40px] rounded-full">
+                    <img class=" border-white overflow-hidden" src="./assets/images/cgcc-dark-logo.png"
+                        alt="C.G.C.C.C. Logo">
                 </div>
                 <div class="flex h-8 w-[1px] bg-white mx-2">
                 </div>
@@ -187,7 +188,7 @@
         </section>
 
         <!-- Who We Are Section -->
-        <section id="who-we-are" class="py-12 md:py-24 bg-[#0B1633]">
+        <section id="who-we-are" class="py-12 md:py-24 bg-black">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div class="grid md:grid-cols-2 gap-8 md:gap-16">
                     <div data-aos="fade-up" data-aos-delay="100">
@@ -290,7 +291,8 @@
                                 <p class="text-xs md:text-sm uppercase flex justify-center items-center tracking-wider">
                                     <span class="text-2xl md:text-3xl material-symbols-outlined"
                                         style="font-variation-settings: 'wght' 300">calendar_today
-                                    </span> Date</p>
+                                    </span> Date
+                                </p>
                                 <p class="text-base font-semibold text-center">Sunday, October 27,
                                     2025<br />-<br />Friday, October 31, 2025</p>
                             </div>
@@ -316,17 +318,17 @@
                         <div class="flex gap-4">
                             <a href="https://form.jotform.com/ndccan2020/can-ghana-agric-investment-summit"
                                 class="flex items-center justify-center text-center w-full md:w-64 mt-4 md:mt-6 bg-[#F5C567] text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base"
-                                    target="_blank">Register</a>
-                            <a
-                                class="flex items-center justify-center border border-gray-400 text-center w-full md:w-64 mt-4 md:mt-6 bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base" 
-                                href="./assets/documents/PROGRAM ITINERARY OUTLINE UPDATED 1.1.pdf"
-                                    target="_blank">View program itinerary</a>
+                                target="_blank">Register</a>
+                            <a class="flex items-center justify-center border border-gray-400 text-center w-full md:w-64 mt-4 md:mt-6 bg-white text-[#0B1633] py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300 text-base"
+                                href="./assets/documents/PROGRAM ITINERARY OUTLINE UPDATED 1.1.pdf" target="_blank">View
+                                program itinerary</a>
                         </div>
 
                     </div>
                     <div>
-                        <a href="./assets/documents/GHCAN AGRIC 25 Poster.pdf" target="_blank"><img src="./assets/images/ghcan-agric-25-poster.png" alt="Innovation for Impact 2025"
-                            class="w-full h-auto shadow-lg" data-aos="fade-up"></a>
+                        <a href="./assets/documents/GHCAN AGRIC 25 Poster.pdf" target="_blank"><img
+                                src="./assets/images/ghcan-agric-25-poster.png" alt="Innovation for Impact 2025"
+                                class="w-full h-auto shadow-lg" data-aos="fade-up"></a>
                     </div>
                 </div>
             </div>
@@ -458,47 +460,56 @@
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <a href="https://www.tradecommissioner.gc.ca/en.html" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/canada-trade-service.png" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Canada Trade Commissioner Service</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/canada-trade-service.png" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Canada Trade Commissioner Service</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://investalberta.ca/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/invest-alberta.png" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Invest Alberta Corporation</p>
-                                </div>
-                                </a>can
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/invest-alberta.png" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Invest Alberta Corporation</p>
+                                    </div>
+                                </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://www.canada-gh.org/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/cancham.jpg" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Canada Ghana Chamber of Commerce(CANCHAM HQ)</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/cancham.jpg" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Canada Ghana Chamber of Commerce(CANCHAM HQ)</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="https://www.globalenergyshow.com/" target="_blank">
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/global-energy-show.png" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Global Energy Show</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="Ghana Investment Promotion Centre (GIPC)" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/gipc.jpg" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Ghana Investment Promotion Centre (GIPC)</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/gipc.jpg" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Ghana Investment Promotion Centre (GIPC)</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://www.ghanagas.com.gh/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/ghana-gas.jpg" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Ghana Gas Company Limited</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/ghana-gas.jpg" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Ghana Gas Company Limited</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
@@ -518,92 +529,92 @@
                             </li>
                             <li class="splide__slide">
                                 <a href="https://www.gccc.ca/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/ghana-canadian-chamber-of-commerce.jpg" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Ghanian-Canadian Chamber of Commerce</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/ghana-canadian-chamber-of-commerce.jpg"
+                                            alt="partner" class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Ghanian-Canadian Chamber of Commerce</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://presidency.gov.gh/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/presidency logo ghana.png" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">The Presidency of the Republic of Ghana</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/presidency logo ghana.png" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">The Presidency of the Republic of Ghana</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://icconsult.ca/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/ICC logo.jpg" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">InterContinental Consultants</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/ICC logo.jpg" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">InterContinental Consultants</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://gcacalgary.ca/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/ghana-canadian-assoc-calgary.png" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Ghanaian-Canadian Association of Calgary</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/ghana-canadian-assoc-calgary.png" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Ghanaian-Canadian Association of Calgary</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://gcaocanada.org/about-us/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/ghana-canada-ontario.png" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Ghanaian-Canadian Association of Ontario</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/ghana-canada-ontario.png" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Ghanaian-Canadian Association of Ontario</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://www.if.foundation/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/iffoundation.png" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Innovate Finance Foundation</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/iffoundation.png" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Innovate Finance Foundation</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://www.calgaryeconomicdevelopment.com/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/calgary economic development logo.jpg" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Calgary Economic Development</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/calgary economic development logo.jpg"
+                                            alt="partner" class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Calgary Economic Development</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://www.alberta.ca/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/alberta-government.jpg" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Government of Alberta</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/alberta-government.jpg" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Government of Alberta</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://chooselethbridge.ca/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/lethbridge.gif" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">Lethbridge</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/lethbridge.gif" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">Lethbridge</p>
+                                    </div>
                                 </a>
                             </li>
                             <li class="splide__slide">
                                 <a href="https://ucalgary.ca/" target="_blank">
-                                <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
-                                    <img src="./assets/images/logos/UoC logo.png" alt="partner"
-                                        class="h-12 md:h-16 object-contain mx-auto mb-2">
-                                    <p class="text-xs md:text-sm">University of Calgary</p>
-                                </div>
+                                    <div class="flex flex-col items-center justify-center w-24 md:w-32 h-32 md:h-40">
+                                        <img src="./assets/images/logos/UoC logo.png" alt="partner"
+                                            class="h-12 md:h-16 object-contain mx-auto mb-2">
+                                        <p class="text-xs md:text-sm">University of Calgary</p>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -646,7 +657,7 @@
         </section>
 
         <!-- Contact Us Section -->
-        <section id="contact" class="bg-[#F5C567] py-12 md:py-24"><a href="#contact"></a>
+        <section id="contact" class="bg-[#F5C567] py-12 md:py-24 hidden"><a href="#contact"></a>
             <div class="mx-auto" data-aos="zoom-in">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
                     <div>
@@ -654,7 +665,7 @@
                             class="h-64 md:h-[575px] w-full object-cover" data-aos="fade-up">
                     </div>
                     <div
-                        class="h-auto md:h-[621px] flex flex-col bg-[#0B1633] pl-4 md:pl-16 pr-4 md:pr-[128px] py-8 md:py-40 md:rounded-l-2xl">
+                        class="h-auto md:h-[621px] flex flex-col bg-black pl-4 md:pl-16 pr-4 md:pr-[128px] py-8 md:py-40 md:rounded-l-2xl">
                         <h2 class="text-3xl md:text-5xl font-bold text-white font-serif mb-4">
                             Contact Us
                         </h2>
@@ -683,7 +694,7 @@
         </section>
 
         <!-- Footer Section -->
-        <section class="bg-[#F5C567] pb-12 md:pb-24 h-auto md:h-[336px]">
+        <section class="bg-[#F5C567] pb-12 md:pb-24 h-auto md:h-[336px] hidden">
             <div class="max-w-screen-xl mx-auto px-4 md:px-8 text-center">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-start text-[#6D6150]">
                     <div class="flex flex-col items-start">
@@ -718,8 +729,58 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0B1633] text-white py-6 md:py-8">
-        <div class="max-w-screen-xl mx-auto px-4 md:px-6 text-center">
+    <footer class="bg-black text-white">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-6 mb-4 text-center py-16">
+            <div class="flex">
+                <div class="flex flex-col items-start justify-start w-1/3">
+                    <img class=" border-white overflow-hidden" src="./assets/images/cgcc-dark-logo.png"
+                        alt="C.G.C.C.C. Logo">
+                    <div class="text-2xl font-serif font-semibold text-left py-8">
+                        CANADA GHANA CHAMBER OF COMMERCE,<br />
+                        CALGARY CHAPTER
+                    </div>
+                </div>
+                <div class="flex flex-col text-left gap-2 px-16 w-1/3">
+                    <p class="text-2xl font-semibold mb-2">Contact Us</p>
+                    <div class="text-lg items-center flex">
+                        <span class="mr-4 text-xl md:text-3xl material-symbols-outlined"
+                            style="font-variation-settings: 'wght' 200">home_pin
+                        </span>
+                        <div>P.O Box 2157. Claresholm AB, T0L0T0., Canada</div>
+                    </div>
+                    <div class="text-lg items-center flex">
+                        <div class="mr-4">
+                            <span class="text-xl md:text-3xl material-symbols-outlined"
+                                style="font-variation-settings: 'wght' 200">call
+                            </span>
+                        </div>
+                        <div>
+                            <p><a href="tel:+1-587-585-7324" class="hover:text-indigo-600">+1-587-585-7324</a></p>
+                            <p><a href="tel:+1-403-970-4386" class="hover:text-indigo-600">+1-403-970-4386</a></p>
+                            <p><a href="tel:+233-203-316-926" class="hover:text-indigo-600">+233-203-316-926</a></p>
+                        </div>
+                    </div>
+                    <div class="text-lg items-center flex"><span class="mr-4 text-xl md:text-3xl material-symbols-outlined"
+                            style="font-variation-settings: 'wght' 200">alternate_email
+                        </span><a href="mailto:info@cgccc.ca"
+                            class="hover:text-indigo-600">info@cgccc.ca</a></div>
+                </div>
+                <div class="flex flex-col text-left gap-2 px-16 w-1/3">
+                    <p class="text-2xl font-semibold mb-2">Quick Links</p>
+                    <ul class="text-sm">
+                        <li class="text-lg"><a href="#hero" class="hover:text-indigo-600">Home</a></li>
+                        <li class="text-lg"><a href="#who-we-are" class="hover:text-indigo-600">Who We Are</a></li>
+                        <li class="text-lg"><a href="#what-we-do" class="hover:text                 -indigo-600">What We
+                                Do</a></li>
+                        <li class="text-lg"><a href="#business-facilitation" class="hover:text-indigo-600">Business
+                                Facilitation</a></li>
+                        <li class="text-lg"><a href="#key-partners" class="hover:text-indigo-600">Key Partners</a></li>
+                        <li class="text-lg"><a href="#contact" class="hover:text-indigo-600">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-xl mx-auto px-4 md:px-6 pb-8 text-center">
             <p class="text-xs md:text-base">&copy; 2025 Canada Ghana Chamber of Commerce, Calgary Chapter, CGCCCC. All
                 Rights Reserved.</p>
         </div>
@@ -727,7 +788,8 @@
 
     <!-- AOS.js (Animate On Scroll) JS CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>
+    <script
+        src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>
     <script>
         AOS.init({
             duration: 800,
